@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "지그재그 주문번호 복사",
+    "version": "1.0",
+    "description": "지그재그 주문번호를 클립보드에 복사하는 크롬 확장 프로그램",
+    "icons": {
+      "48": "icon.png"
+    },
+    "permissions": [
+      "clipboardWrite",
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://jigzag.co.kr/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": {
+        "48": "icon.png"
+      }
+    }
+  }
+  
