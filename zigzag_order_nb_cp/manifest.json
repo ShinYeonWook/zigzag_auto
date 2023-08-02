@@ -16,7 +16,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://jigzag.co.kr/*"],
+        "matches": ["https://partners.kakaostyle.com/shop/*"],
         "js": ["content.js"]
       }
     ],
